@@ -22,7 +22,7 @@ click==7.1.2
     #   pip-tools
 codecov==2.1.11
     # via -r requirements-dev.in
-coverage[toml]==5.5
+coverage==5.5
     # via
     #   codecov
     #   pytest-cov
@@ -68,7 +68,7 @@ pyparsing==2.4.5
     # via packaging
 pytest-asyncio==0.15.1
     # via -r requirements-dev.in
-pytest-cov==2.12.0
+pytest-cov==2.12.1
     # via -r requirements-dev.in
 pytest-django==4.3.0
     # via -r requirements-dev.in
@@ -110,18 +110,14 @@ termcolor==1.1.0
 toml==0.10.2
     # via
     #   black
-    #   coverage
     #   pep517
     #   pylint
     #   pytest
-typed-ast==1.4.2; python_version < '3.9'
-    # via
-    #   black
-    #   mypy
+    #   pytest-cov
+typed-ast==1.4.2
+    # via mypy
 typing-extensions==3.7.4.3
-    # via
-    #   black
-    #   mypy
+    # via mypy
 urllib3==1.25.8
     # via requests
 wasmer==0.3.0
